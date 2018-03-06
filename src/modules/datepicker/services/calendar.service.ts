@@ -100,7 +100,7 @@ export class CalendarService {
     public onManualUpdate:() => void = () => {};
 
     public reset():void {
-        this.currentView = this.config.mappings.finalView;
+        this.currentView = this.config.mappings.initialView;
 
         if (!this._selectedDate) {
             let current = this.currentDate.getTime();
